@@ -1,0 +1,245 @@
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#000000"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="522dp"
+    android:background="#000000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:text="Cash Lane"
+                android:textSize="18sp"
+                android:textAlignment="center"    
+                android:textColor="#FFFFFF"
+                />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#990000"
+            android:padding="5dip"
+            android:textAlignment="textEnd" >
+
+            <TextView
+                android:background="#990000"
+                android:text="Toll:"
+                android:textColor="#FFFFFF" />
+
+           <TextView
+               android:id="@+id/normalToll"
+               android:layout_marginLeft="30sp"
+               android:background="#990000"
+               android:text="0.00"
+               android:textColor="#FFFFFF" />
+                
+        </TableRow>
+        
+           <TableRow
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#E50000"
+               android:padding="5dip"
+               android:textAlignment="textEnd" >
+
+            <TextView 
+                android:text="add. Axle Toll:"
+                android:textColor="#FFFFFF"
+                />
+
+           <TextView
+               android:id="@+id/AddToll"
+               android:layout_marginLeft="30sp"
+               android:background="#E50000"
+               android:text="0.00"
+               android:textColor="#FFFFFF" />
+                
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#990000"
+            android:padding="5dip" >
+
+            <TextView 
+                android:text="Number Of Trips:"
+                android:textColor="#FFFFFF"
+                />
+
+           <TextView
+               android:id="@+id/xnumberOfTrips"
+               android:layout_marginLeft="30sp"
+               android:background="#990000"
+               android:text="0"
+               android:textAlignment="textEnd"
+               android:textColor="#FFFFFF" />
+                
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#4c0000"
+            android:padding="10dip" >
+
+            <TextView 
+                android:text="x times(s) toll:"
+                android:textColor="#FFFFFF"
+                />
+
+           <TextView
+               android:id="@+id/xtimesToll"
+               android:layout_marginLeft="30sp"
+               android:background="#4c0000"
+               android:text="0.00"
+               android:textAlignment="textEnd"
+               android:textColor="#FFFFFF" />
+                
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:text="E-Zpass"
+                android:textSize="18sp"
+                android:textAlignment="center"    
+                android:textColor="#FFFFFF"
+                />
+        </TableRow>
+
+         <TableRow
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="#e50000"
+             android:padding="5dip" >
+
+            <TextView 
+                android:text="Toll:"
+                android:textColor="#FFFFFF"
+                />
+
+           <TextView
+               android:id="@+id/ezpassToll"
+               android:layout_marginLeft="30sp"
+               android:background="#E50000"
+               android:text="0.00"
+               android:textAlignment="textEnd"
+               android:textColor="#FFFFFF" />
+                
+        </TableRow>
+        
+           <TableRow
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="#990000"
+               android:padding="5dip" >
+
+            <TextView 
+                android:text="add. Axle Toll:"
+                android:textColor="#FFFFFF"
+                />
+
+           <TextView
+               android:id="@+id/ezpassAddToll"
+               android:layout_marginLeft="30sp"
+               android:background="#990000"
+               android:text="0.00"
+               android:textAlignment="textEnd"
+               android:textColor="#FFFFFF" />
+                
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#e50000"
+            android:padding="5dip" >
+
+            <TextView 
+                android:text="Number Of Trips:"
+                android:textColor="#FFFFFF"
+                />
+
+           <TextView
+               android:id="@+id/ezpassnumberOfTrips"
+               android:layout_marginLeft="30sp"
+               android:background="#e50000"
+               android:text="0"
+               android:textAlignment="textEnd"
+               android:textColor="#FFFFFF" />
+                
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#990000"
+            android:padding="10dip"
+            android:textAlignment="textEnd" >
+
+            <TextView 
+                android:text="x times(s) toll:"
+                android:textColor="#FFFFFF"
+                />
+
+           <TextView
+               android:id="@+id/ezpassxtimesToll"
+               android:layout_marginLeft="30sp"
+               android:background="#990000"
+               android:text="0.00"
+               android:textColor="#FFFFFF" />
+                
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#522a99"
+            android:padding="10dip" >
+
+            <TextView 
+                android:text="Using the E-Zpass you save:"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                />
+
+           <TextView
+               android:id="@+id/ezpassSavings"
+               android:layout_marginLeft="30sp"
+               android:background="#522a99"
+               android:text="0.00"
+               android:textAlignment="textEnd"
+               android:textColor="#FFFFFF"
+               android:textSize="14sp" />
+                
+        </TableRow>
+        <Button
+            android:id="@+id/btnViewMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Bridge"
+            android:textColor="#FFFFFF"
+            />
+   
+    </TableLayout>
+
+</RelativeLayout>
+</ScrollView>
